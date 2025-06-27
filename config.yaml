@@ -40,6 +40,16 @@ wiso:
   auto_fill: false  # Set to true for automatic filling
   supervision_mode: true  # User supervision required
 
+# Mobile Capture Module
+mobile:
+  enabled: true
+  sync_method: "cloud_folder"  # Options: "cloud_folder", "email", "disabled"
+  cloud_folder_path: ""  # Path to your cloud sync folder (Google Drive, iCloud, etc.)
+  mobile_email: ""  # Dedicated email for mobile uploads
+  auto_sync_interval: 300  # Check for new images every 5 minutes
+  image_formats: ["jpg", "jpeg", "png", "heic"]
+  auto_delete_after_processing: false  # Keep originals in cloud
+
 # Security
 encryption:
   enabled: true

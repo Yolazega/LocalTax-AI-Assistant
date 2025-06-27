@@ -68,6 +68,7 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 │   ├── receipts/
 │   ├── account_statements/
 │   ├── memory_vectors/
+│   ├── mobile_uploads/
 ├── /src
 │   ├── imap_email_reader.py
 │   ├── ocr_parser.py
@@ -113,6 +114,35 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 
 * MIT or CC BY-NC-SA 4.0 for open-source use.
 * Commercial use only with permission.
+
+## 📱 Mobile Capture Module – Extension for LocalTax AI Assistant
+
+### 📲 Mobile Upload Workflow (Optional)
+
+**What it does:**
+
+* Users can snap photos of receipts, restaurant bills, or other expenses directly on their smartphone.
+* Images are temporarily stored in a user-chosen cloud folder (e.g., Google Drive, iCloud, Nextcloud) or sent by email to a dedicated inbox.
+* The LocalTax AI Assistant pulls these images from the cloud folder or email inbox and processes them **locally only**.
+* OCR scanning, classification, matching to bank statements, and WISO field mapping are done fully **offline** on the Jetson/PC setup.
+* The cloud or email is only a temporary transit point. Users remain in control and can delete photos anytime.
+
+### ✅ Why this works
+
+✔️ Adds real-world flexibility for business trips and daily expenses.
+✔️ Keeps sensitive tax data local — only the image is in transit.
+✔️ Users can decide case by case which receipts to upload immediately and which to handle at home.
+
+### 📁 How it fits in the Blueprint
+
+* **New source folder:** `/data/mobile_uploads/`
+* **Optional sync script:** Watches your cloud folder and copies new images locally.
+* **Same OCR module:** Processes mobile images just like email attachments.
+* **Same matching logic:** Connects receipts to payments and maps fields automatically.
+
+**Result:** One seamless workflow covering both email and on-the-go scanning — without sacrificing local privacy.
+
+✅ Added to the core concept!
 
 ## 🚀 Next Step
 
