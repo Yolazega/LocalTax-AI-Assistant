@@ -143,9 +143,3 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 **Result:** One seamless workflow covering both email and on-the-go scanning — without sacrificing local privacy.
 
 ✅ Added to the core concept!
-
-## 🚀 Next Step
-
-Push this repo to GitHub, adjust `config.yaml` with your IMAP and OpenAI keys, run `main.py` — and let your taxes manage themselves!
-
-**End of Concept Summary.**
