@@ -1,4 +1,4 @@
-# 📘 LocalTax AI Assistant – Full Concept (ENGLISH)
+# 📘 LocalTax AI Assistant – Full Concept 
 
 ## ✅ Project Vision
 
