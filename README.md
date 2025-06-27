@@ -42,14 +42,17 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 * Matches payments within date range and fuzzy amount tolerance.
 * Links invoice to payment with timestamped memory.
 
-6️⃣ **WISO Mapper**
+6️⃣ **Tax Software Mapper (WISO Integration)**
 
-* Maps structured results (category, deduction percent, tax code) to the correct WISO input fields.
-* Remembers previous mappings to automate future ones.
+* **WISO** is a popular German tax preparation software that allows individuals to file their taxes directly with the tax authorities without needing an accountant.
+* **Similar software exists worldwide:** TurboTax (USA), TaxAct (USA), UFile (Canada), TaxCalc (UK), etc.
+* Maps structured results (category, deduction percent, tax code) to the correct input fields in your tax software.
+* Remembers previous mappings to automate future tax seasons.
 
 7️⃣ **RPA Auto Filler**
 
-* Uses PyAutoGUI or Selenium to input data into WISO's GUI automatically.
+* Uses PyAutoGUI or Selenium to input data into your tax software's interface automatically.
+* Works with WISO or can be adapted for other tax preparation software.
 * Can run headless or with user supervision.
 
 8️⃣ **Master Runner (`main.py`)**
@@ -97,7 +100,9 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 
 ## 🧩 Example Use Case
 
-> User receives a PDF invoice by email ➜ The IMAP reader downloads it ➜ OCR parser scans it ➜ Vector store matches it to a payment ➜ OpenAI trainer clarifies tax logic ➜ Mapper prepares WISO fields ➜ RPA auto-fills ➜ User checks and submits via ELSTER.
+> User receives a PDF invoice by email ➜ The IMAP reader downloads it ➜ OCR parser scans it ➜ Vector store matches it to a payment ➜ OpenAI trainer clarifies tax logic ➜ Mapper prepares tax software fields ➜ RPA auto-fills ➜ User checks and submits to tax authorities.
+
+**Note:** The system uses WISO (Germany) as the primary example, but can be adapted for tax software in other countries (TurboTax, TaxAct, UFile, etc.).
 
 ## ✅ Deployment
 
