@@ -118,4 +118,4 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 
 Push this repo to GitHub, adjust `config.yaml` with your IMAP and OpenAI keys, run `main.py` — and let your taxes manage themselves!
 
-**End of Concept Summary.** 
+**End of Concept Summary.**
