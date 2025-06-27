@@ -99,6 +99,10 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 
 > User receives a PDF invoice by email ➜ The IMAP reader downloads it ➜ OCR parser scans it ➜ Vector store matches it to a payment ➜ OpenAI trainer clarifies tax logic ➜ Mapper prepares WISO fields ➜ RPA auto-fills ➜ User checks and submits via ELSTER.
 
+## ✅ Deployment
+
+* Easy to extend: Add modules for new countries, new forms.
+
 ## ⚙️ Requirements
 
 * Python, LangChain, ChromaDB/FAISS, pytesseract, Selenium, PyAutoGUI.
