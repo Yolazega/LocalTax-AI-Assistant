@@ -1,0 +1,45 @@
+# Core Dependencies
+python>=3.11
+langchain>=0.1.0
+chromadb>=0.4.0
+faiss-cpu>=1.7.0
+openai>=1.0.0
+
+# Email Processing
+imaplib2>=3.6
+email-validator>=2.0.0
+
+# OCR and Document Processing
+pytesseract>=0.3.10
+Pillow>=10.0.0
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+
+# GUI Automation
+pyautogui>=0.9.54
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0
+
+# Vector Store and Embeddings
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+
+# Utilities
+python-dateutil>=2.8.0
+fuzzywuzzy>=0.18.0
+python-levenshtein>=0.21.0
+tqdm>=4.65.0
+
+# Security
+cryptography>=41.0.0
+keyring>=24.0.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0

@@ -1,0 +1,46 @@
+# LocalTax AI Assistant Configuration
+# Replace with your actual credentials
+
+# Email Configuration
+imap:
+  server: "imap.gmail.com"  # or your email provider's IMAP server
+  port: 993
+  username: "your-email@gmail.com"
+  password: "your-app-password"  # Use app-specific password for Gmail
+  ssl: true
+
+# OpenAI Configuration
+openai:
+  api_key: "your-openai-api-key"
+  model: "gpt-4"
+  max_tokens: 2000
+
+# Tax Year Configuration
+tax_year: 2024
+
+# File Processing
+filters:
+  date_range:
+    start: "2024-01-01"
+    end: "2024-12-31"
+  keywords:
+    - "invoice"
+    - "receipt"
+    - "rechnung"
+    - "quittung"
+
+# OCR Settings
+ocr:
+  language: "deu"  # German language for Tesseract
+  confidence_threshold: 60
+
+# WISO Integration
+wiso:
+  executable_path: ""  # Path to WISO software
+  auto_fill: false  # Set to true for automatic filling
+  supervision_mode: true  # User supervision required
+
+# Security
+encryption:
+  enabled: true
+  method: "AES-256"
