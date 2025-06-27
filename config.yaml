@@ -9,11 +9,19 @@ imap:
   password: "your-app-password"  # Use app-specific password for Gmail
   ssl: true
 
-# OpenAI Configuration
+# Progressive Training Configuration
+training:
+  mode: "hybrid"  # Options: "hybrid", "local_only", "training"
+  online_dependency: 80  # Percentage (decreases over time as local knowledge grows)
+  local_confidence_threshold: 0.85  # When to use local vs online knowledge
+
+# OpenAI Configuration (for training phase)
 openai:
   api_key: "your-openai-api-key"
   model: "gpt-4"
   max_tokens: 2000
+  anonymization: true  # Always remove personal identifiers
+  knowledge_caching: true  # Store responses locally
 
 # Tax Year Configuration
 tax_year: 2024

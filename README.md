@@ -8,10 +8,22 @@ The LocalTax AI Assistant is a fully local, privacy-first tax automation pipelin
 
 To replace unreliable, expensive tax advisors with a personal assistant that:
 
-* Learns your tax logic over time (through local examples and Cloud coaching)
+* Learns your tax logic over time (through progressive training approach)
 * Matches invoices and payments automatically
 * Fills tax software fields automatically
-* Stays 100% offline and encrypted
+* **Evolves from hybrid to fully local operation** as it masters tax laws
+
+## 🧠 Why Progressive Training?
+
+**The Reality:** Tax laws are incredibly complex and constantly changing. Even professional accountants specialize in specific areas and rely on updated resources.
+
+**The Solution:** 
+* **Start Smart:** Use online LLM initially to handle complex tax questions
+* **Learn Everything:** Store all tax knowledge locally for future use
+* **Go Local:** Gradually reduce online dependency as local knowledge grows
+* **Stay Current:** Update tax rules as laws change
+
+**Result:** You get professional-level tax knowledge that becomes fully private over time.
 
 ## ⚙️ Core Features
 
@@ -30,11 +42,13 @@ To replace unreliable, expensive tax advisors with a personal assistant that:
 * Saves all scanned documents and extracts semantic data.
 * Stores tax contexts ("Laptop for home office", "Partial private use").
 
-4️⃣ **Hybrid Cloud Coaching**
+4️⃣ **Progressive Training System (Hybrid to Local)**
 
-* Uses ChatGPT or other LLM via API for deep tax rules.
-* Sends anonymized prompts only (no names, no IDs).
-* Stores every new answer locally for future use.
+* **Phase 1 - Initial Training:** Uses ChatGPT or other LLM via API to learn complex tax rules (nobody knows all tax laws!).
+* **Phase 2 - Knowledge Building:** Sends anonymized prompts only (no names, no IDs) and stores every answer locally.
+* **Phase 3 - Local Transition:** As the local model learns enough tax laws, gradually reduces dependency on online services.
+* **Phase 4 - Full Local Operation:** Eventually operates 100% offline with comprehensive tax knowledge.
+* **Tax Updates:** Implements new tax law changes as they occur, keeping the system current.
 
 5️⃣ **Matching Engine**
 
